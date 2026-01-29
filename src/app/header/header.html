@@ -1,98 +1,67 @@
-<div class="content svelte-1ozz4lq">
-    <div class="logo svelte-1ozz4lq">
-        <a href="/" class="svelte-1hr7l9s">
-            <img src="/public/assets/logo-GBHE6XF2.svg" alt="IsThereAnyDeal Logo" class="svelte-1hr7l9s">
-            <span class="title svelte-1hr7l9s">IsThereAny<span class="svelte-1hr7l9s">Deal</span></span>
-        </a><!---->
-    </div> 
-    <nav class="svelte-1ozz4lq">
-        <div class="item svelte-15872wx" role="menu" tabindex="-1">
-            <button type="button" class="main svelte-15872wx"><span><!---->Games<!----></span> 
-                <div class="svelte-pc081e">
-                    <i class="up svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-up"></use>
-                        </svg><!---->
-                    </i>
-                    <i class="down svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-down"></use>
-                        </svg><!---->
-                    </i>
-                </div><!---->
-            </button> <!--[!--><!--]-->
-        </div><!---->
-        <div class="item svelte-15872wx" role="menu" tabindex="-1">
-            <button type="button" class="main svelte-15872wx">
-                <span><!---->Other<!----></span>
-                <div class="svelte-pc081e">
-                    <i class="up svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-up"></use>
-                        </svg><!---->
-                    </i> 
-                    <i class="down svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-down"></use>
-                        </svg><!---->
-                    </i>
-                </div><!---->
-            </button> <!--[!--><!--]-->
-        </div><!----> 
-        <div class="item svelte-15872wx" role="menu" tabindex="-1">
-            <button type="button" class="main svelte-15872wx">
-                <span><!---->Community<!----></span> 
-                <div class="svelte-pc081e">
-                    <i class="up svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-up"></use>
-                        </svg><!---->
-                    </i> 
-                    <i class="down svelte-pc081e">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                            <use href="#i-chevron-down"></use>
-                        </svg><!----></i>
-                    </div><!---->
-                </button> <!--[!--><!--]-->
-            </div><!----> <!--[!--><!--]--><!---->
-        </nav> 
-        <div class="search svelte-1ozz4lq">
-            <button type="button" class="svelte-38g398">
-                <i class="svelte-38g398">
-                    <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                        <use href="#i-magnifying-glass"></use>
-                    </svg><!---->
-                </i> 
-                <span class="search svelte-38g398"><span>Search</span> 
-                <span class="shortcut svelte-38g398">Ctrl + K</span></span>
-            </button><!----></div> <!--[!--><!--]--> 
-            <nav class="svelte-1ozz4lq">
-                <div class="item svelte-15872wx" role="menu" tabindex="-1">
-                    <button type="button" class="main svelte-15872wx">
-                        <span><!--[!-->
-                            <i class="svelte-11xt5jl">
-                                <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 448 512">
-                                    <use href="#i-user-alien"></use>
-                                </svg><!---->
-                            </i> User<!--]--><!---->
-                        </span> 
-                        <div class="svelte-pc081e">
-                            <i class="up svelte-pc081e">
-                                <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                                    <use href="#i-chevron-up"></use>
-                                </svg><!----></i>
-                                <i class="down svelte-pc081e">
-                                    <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 512 512">
-                                        <use href="#i-chevron-down">
-                                        </use></svg><!---->
-                                    </i>
-                                </div><!---->
-                            </button> <!--[!--><!--]-->
-                        </div><!---->
-                    </nav> 
-                    <button class="mobile-nav-btn svelte-1ozz4lq" type="button">
-                        <svg class="svg-inline--fa" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 448 512">
-                            <use href="#i-bars"></use>
-                        </svg><!---->
-                    </button>
-                </div> <!--[!--><!--]-->
+<div class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item">
+            LOGO
+        </a>
+        <a role="button" class="navbar-burger">
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Página Principal
+            </a>
+            <a class="navbar-item">
+                Descontos
+            </a>
+            <a class="navbar-item">
+                Categorias
+            </a>
+            <div class="navbar-item" id="dropdown-div">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Mais
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item">
+                            Jogos Grátis
+                        </a></li>
+                    <li><a class="dropdown-item">
+                            Trabalhe Conosco
+                        </a></li>
+                    <li><a class="dropdown-item">
+                            Contato/Suporte
+                        </a></li>
+                </ul>
+            </div>
+            <div class="navbar-item" id="dropdown-login">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Entrar
+                </button>
+                <div id="divLogin">
+                    <form class="px-4 py-3 dropdown-menu">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="formEmail" placeholder="email@exemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="formPassword" placeholder="senha">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">Lembrar</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <a class="dropdown-item">Novo por aqui? Cadastre-se!</a>
+                        <a class="dropdown-item">Esqueceu a senha?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
