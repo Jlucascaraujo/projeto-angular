@@ -1,0 +1,14 @@
+#sidenavbar {
+    background-color: var(--basic-item-bg-color);
+    padding: 15px;
+    width: fit-content;
+}
+
+#sidenavbar ul, li {
+    list-style-type: none;
+}
+
+#sidenavbar a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
