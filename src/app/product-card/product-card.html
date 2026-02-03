@@ -1,0 +1,43 @@
+<div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+  <div class="position-absolute top-0 end-0 m-2 z-1">
+    <span class="badge rounded-pill shadow-sm" 
+          [class.bg-success]="product.isInStock" [class.bg-danger]="!product.isInStock">
+      {{ product.isInStock ? 'Em estoque' : 'Esgotado' }}
+    </span>
+  </div>
+
+  <div class="p-3 bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+    <img [src]="product.thumbnailImage" 
+         [alt]="product.productShotName"
+         class="img-fluid rounded-3"
+         style="max-height: 100%; object-fit: contain;">
+  </div>
+
+  <div class="card-body d-flex flex-column">
+    <div class="d-flex justify-content-between mb-1">
+      <small class="text-muted text-uppercase fw-bold">{{ product.categoryName }}</small>
+    </div>
+
+    <h5 class="card-title mb-1 fw-bold text-truncate" [title]="product.longName">
+      {{ product.productShotName }}
+    </h5>
+    
+    <p class="card-text text-muted small flex-grow-1 text-truncate-2">
+      {{ product.description }}
+    </p>
+
+    <div class="mt-3">
+      <h4 class="text-primary fw-bold mb-3">
+        {{ product.price | currency:'BRL':'symbol':'1.2-2' }}
+      </h4>
+      
+      <button 
+        (click)="addToCart(product)"
+        [disabled]="!product.isInStock"
+        class="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 py-2">
+        <i class="bi bi-cart-plus"></i>
+        {{ product.isInStock ? 'Adicionar ao carrinho' : 'Indisponível' }}
+      </button>
+    </div>
+  </div>
+</div>

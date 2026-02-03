@@ -1,0 +1,18 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { IProduct } from '../app'; // Verifique se o caminho está correto
+
+@Component({
+  selector: 'app-product-card',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './product-card.html',
+  styleUrls: ['./product-card.css']
+})
+export class ProductCard {
+  @Input() product!: IProduct;
+
+  addToCart(product: IProduct) {
+    console.log(`Produto adicionado: ${product.longName}`);
+  }
+}

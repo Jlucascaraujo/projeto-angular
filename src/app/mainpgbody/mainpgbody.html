@@ -1,1 +1,7 @@
-<p>mainpgbody works!</p>
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" *ngFor="let item of productList">
+      <app-product-card [product]="item"></app-product-card>
+    </div>
+  </div>
+</div>

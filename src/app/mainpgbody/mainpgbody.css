@@ -1,0 +1,20 @@
+/* Efeito de hover para dar vida ao card */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* Garante que o botão tenha um toque gamer */
+.btn-dark {
+  background-color: #1a1a1a;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
